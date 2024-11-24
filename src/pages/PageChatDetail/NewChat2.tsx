@@ -36,9 +36,9 @@ import { useDatabase, useNotifications } from "../../store/db";
 import VoiceRecorderModal from "../../components/VoiceRecorderModal";
 // import OpenAI from "openai";
 
-const OPENAI_API_KEY =
-  "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";
-const url = "https://enhanced-monkfish-enabled.ngrok-free.app";
+// const OPENAI_API_KEY =
+//   "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";
+// const url = "https://enhanced-monkfish-enabled.ngrok-free.app";
 // const userPrompt = `Given you're a shopkeeper and I will provide you an unstructured data of the list of items customer purchased. You need to structure the data and give json format for the list of items. I will give you item name, brand(can be absent), size (can be absent), qty, unit, price. An example of the note containing all the flavors:
 // "note down the items granola yolo roots 400 gram two packets price 440 jeera cone brand 5 packet mrp 199  sugar 5 kg 50 rupees besan rajdhani half kg 100 rupees per kg suji goodtime half kg 250 rupees rosogulla 1Kg box 1 pieces MRP 250 rupees atta ashirwad 5kg 1piece 325 rupees chawal 5 kg 45 rupees print it"
 
