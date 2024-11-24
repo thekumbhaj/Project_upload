@@ -1,0 +1,9 @@
+.ComponentHeader {
+    background: var(--light-background);
+    padding-top: 4px;
+    text-transform: capitalize;
+    ion-toolbar {
+        --background: var(--light-background);
+        --border-width: 0 !important;
+    }
+}

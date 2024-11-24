@@ -1,0 +1,122 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+
+ion-header {
+    background: var(--body-background);
+  
+    ion-toolbar {
+      // padding-top: 4px !important;
+      // padding-bottom: 4px !important;
+      
+      .backSpan {
+        position: relative;
+        z-index: 999;
+        top: 7px !important;
+      }
+  
+      ion-title {
+        text-align: left;
+        padding-inline: 0px;
+  
+        .logoImg {
+          height: 32px;
+          width: 32px;
+          margin-left: 30px;
+          margin-right: 11px;
+          float: left;
+        }
+  
+        span {
+          position: relative;
+          top: 5px;
+          right: 3px;
+          text-transform: capitalize;
+        }
+      }
+  
+      .backIcon {
+        font-size: 20px;
+        position: relative;
+        top: 4px;
+        z-index: 999;
+      }
+  
+      .rightCloseIcon {
+        float: right;
+        font-size: 20px;
+        position: relative;
+        top: 4px;
+        z-index: 99;
+      }
+    }
+  }
+.newHeader {
+ion-title {
+    text-align: left;
+    ion-fab-button {
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        margin-left: 5px;
+        --background: var(--white-color);
+        ion-icon {
+            font-size: 23px;
+            color: var(--main-text-color);
+        }
+    }
+    span {
+        position: relative;
+        top: -5px;
+        left: 10px;
+        font-weight: var(--font-weight-system-medium-bold);
+    }
+}
+}
+
+ion-app {
+    // margin-top: env(safe-area-inset-bottom);
+    --ion-safe-area-top: constant(safe-area-inset-top); // for ios 11.1
+    --ion-safe-area-top: env(safe-area-inset-top); // for ios 11.2 and onwards
+    // margin-bottom: env(safe-area-inset-bottom);
+    height: calc(100% - constant(safe-area-inset-top));
+    // height: calc(100% - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  }
+  
+  ion-footer {
+    background: var(--white-color);
+    ion-row {
+      padding-bottom: var(--ion-safe-area-bottom);
+    }
+  }
+.fc-media-screen {
+  width: 100%;
+  height: 100%;
+}
+.rightImg, .rightIcon {
+  position: absolute;
+  right: 9px;
+  top: 5px;    
+}
+.rightButton {
+  position: absolute;
+  right: 9px;
+  top: 14px;
+  font-size: var(--system-14-font-size);
+  color: var(--theme-color);
+}
+.rightIconButton {
+  font-size: 38px;
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  color: var(--theme-color);
+}
+.fc-today-button {
+  text-transform: capitalize !important;
+}
+.fc-toolbar-title {
+  font-size: 18px !important;
+}
+  

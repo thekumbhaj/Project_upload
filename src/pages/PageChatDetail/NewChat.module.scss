@@ -1,0 +1,159 @@
+.test{
+  color: #000;
+}
+.iconButton2 {
+  --color: #6c5ce7;
+  --background: transparent;
+  --background-activated: rgba(108, 92, 231, 0.1);
+  --border-radius: 50%;
+  // background: #000;
+  ion-icon {
+    font-size: 1.8rem;
+  }
+}
+.modernMirrorChat {
+    --background: #f0f4f8;
+    --ion-background-color: #f0f4f8;
+    font-family: 'Inter', sans-serif;
+  
+    .header {
+      ion-toolbar {
+        --background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+        ion-title {
+          color: #333;
+          font-weight: 600;
+        }
+  
+        ion-button {
+          --color: #6c5ce7;
+        }
+      }
+    }
+  
+    .chatContent {
+      --padding-top: 20px;
+      --padding-bottom: 20px;
+      --padding-start: 16px;
+      --padding-end: 16px;
+    }
+  
+    .premiumCard {
+      background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(108, 92, 231, 0.2);
+      color: white;
+      margin-bottom: 20px;
+  
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+  
+      .upgradeBtn {
+        --background: white;
+        --color: #6c5ce7;
+        font-weight: 600;
+        text-transform: none;
+        border-radius: 25px;
+      }
+    }
+  
+    .messageContainer {
+      display: flex;
+      flex-direction: column;
+      
+      .message {
+        max-width: 80%;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: flex-start;
+        
+        .messageContent {
+          padding: 12px 16px;
+          border-radius: 18px;
+          font-size: 0.95rem;
+          line-height: 1.4;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+  
+        &.bot {
+          align-self: flex-start;
+          
+          .messageContent {
+            background: white;
+            color: #333;
+            border-top-left-radius: 4px;
+            margin-left: 8px;
+          }
+  
+          .botAvatar {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+        }
+  
+        &.user {
+          align-self: flex-end;
+          
+          .messageContent {
+            background: #6c5ce7;
+            color: white;
+            border-top-right-radius: 4px;
+          }
+        }
+      }
+    }
+  
+    .footer {
+      .inputContainer {
+        display: flex;
+        align-items: center;
+        padding: 8px 4px;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+        ion-input {
+          --background: white;
+          --color: #333;
+          --placeholder-color: #999;
+          --placeholder-opacity: 1;
+          border-radius: 20px;
+          margin: 0 8px;
+          --padding-start: 16px;
+          --padding-end: 16px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+  
+        .iconButton {
+          --color: #6c5ce7;
+          --background: transparent;
+          --background-activated: rgba(108, 92, 231, 0.1);
+          --border-radius: 50%;
+          
+          ion-icon {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  
+  body {
+    overscroll-behavior-y: none;
+  }

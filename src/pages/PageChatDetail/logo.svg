@@ -1,0 +1,49 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5A5EF3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#grad1)"/>
+  <path d="M60,100 Q100,40 140,100 Q100,160 60,100 Z" fill="none" stroke="white" stroke-width="8"/>
+  <circle cx="100" cy="100" r="20" fill="white"/>
+  <text x="100" y="102" font-family="Arial, sans-serif" font-size="24" fill="#4A90E2" text-anchor="middle" dominant-baseline="middle">AI</text>
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <style>
+    @keyframes drawLetter {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes fillLetter {
+      to { fill-opacity: 1; }
+    }
+    .letter {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 100px;
+      stroke: #3498db;
+      fill: #3498db;
+      stroke-width: 2;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      fill-opacity: 0;
+    }
+    #R { animation: drawLetter 1s 0s forwards, fillLetter 0.5s 1s forwards; }
+    #I { animation: drawLetter 1s 0.2s forwards, fillLetter 0.5s 1.2s forwards; }
+    #S { animation: drawLetter 1s 0.4s forwards, fillLetter 0.5s 1.4s forwards; }
+    #H { animation: drawLetter 1s 0.6s forwards, fillLetter 0.5s 1.6s forwards; }
+    #A { animation: drawLetter 1s 0.8s forwards, fillLetter 0.5s 1.8s forwards; }
+    #V { animation: drawLetter 1s 1s forwards, fillLetter 0.5s 2s forwards; }
+  </style>
+
+  <text x="90%" y="50%" text-anchor="middle" dominant-baseline="middle">
+    <tspan class="letter" id="R" dx="-220">R</tspan>
+    <tspan class="letter" id="I" dx="20">I</tspan>
+    <tspan class="letter" id="S" dx="20">S</tspan>
+    <tspan class="letter" id="H" dx="20">H</tspan>
+    <tspan class="letter" id="A" dx="20">A</tspan>
+    <tspan class="letter" id="V" dx="20">V</tspan>
+  </text>
+</svg>

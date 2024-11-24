@@ -1,0 +1,13 @@
+.voice-recorder-modal {
+    --height: 100%;
+    --border-radius: 0;
+  }
+  
+  .voice-recorder-modal ion-content {
+    --background: black;
+  }
+  
+  .voice-recorder-modal ion-toolbar {
+    --background: #1a1a1a;
+    --color: white;
+  }

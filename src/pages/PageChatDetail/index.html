@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISHAV - Developer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            width: 80vw;
+            max-width: 600px;
+            height: auto;
+        }
+        .subtitle {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #3498db;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 2.5s;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+            <style>
+                @keyframes drawLetter {
+                    to { stroke-dashoffset: 0; }
+                }
+                @keyframes fillLetter {
+                    to { fill-opacity: 1; }
+                }
+                .letter {
+                    font-family: 'Arial', sans-serif;
+                    font-weight: bold;
+                    font-size: 100px;
+                    stroke: #3498db;
+                    fill: #3498db;
+                    stroke-width: 2;
+                    stroke-dasharray: 400;
+                    stroke-dashoffset: 400;
+                    fill-opacity: 0;
+                }
+                #R { animation: drawLetter 1s 0s forwards, fillLetter 0.5s 1s forwards; }
+                #I { animation: drawLetter 1s 0.2s forwards, fillLetter 0.5s 1.2s forwards; }
+                #S { animation: drawLetter 1s 0.4s forwards, fillLetter 0.5s 1.4s forwards; }
+                #H { animation: drawLetter 1s 0.6s forwards, fillLetter 0.5s 1.6s forwards; }
+                #A { animation: drawLetter 1s 0.8s forwards, fillLetter 0.5s 1.8s forwards; }
+                #V { animation: drawLetter 1s 1s forwards, fillLetter 0.5s 2s forwards; }
+            </style>
+            <text x="85%" y="50%" text-anchor="middle" dominant-baseline="middle">
+                <tspan class="letter" id="R" dx="-220">R</tspan>
+                <tspan class="letter" id="I" dx="20">I</tspan>
+                <tspan class="letter" id="S" dx="20">S</tspan>
+                <tspan class="letter" id="H" dx="20">H</tspan>
+                <tspan class="letter" id="A" dx="20">A</tspan>
+                <tspan class="letter" id="V" dx="20">V</tspan>
+            </text>
+        </svg>
+        <div class="subtitle">Full Stack Developer</div>
+    </div>
+</body>
+</html>

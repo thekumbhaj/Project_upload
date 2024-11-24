@@ -1,0 +1,7 @@
+{
+  "name": "ENP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

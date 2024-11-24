@@ -1,0 +1,151 @@
+.ComponentUpload {
+    .mediaClass {
+        padding: 0;
+
+        .fileInput {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 999;
+        }
+
+        .addimage {
+            height: 100%;
+            width: 100%;
+        }
+        .addimageCard {
+            height: 100%;
+            width: 100%;
+            background: var(--white-color);
+            border-radius: 8px;
+            display: flex;
+            div {
+                margin: auto;
+                ion-fab-button {
+                    margin: auto;
+                    padding: 4px;            
+                } 
+                p {
+                    margin: 0;
+                    text-align: center;
+                    font-size: 12px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .mediaSection {
+            height: 120px;
+
+            .filenameText {
+                position: absolute;
+                bottom: 6px;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 1 !important;
+                -webkit-box-orient: vertical !important;
+                left: 9px;
+                right: 9px;
+            }
+
+            .deleteClass {
+                position: absolute;
+                top: 2px;
+                right: 5px;
+                background-color: grey;
+                border-radius: 30px;
+                padding: 2px;
+                width: 21px;
+                height: 21px;
+
+                ion-icon {
+                    color: white;
+                    font-size: 17px;
+                }
+            }
+
+            .imageassets {
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: fill;
+                }
+            }
+
+            .videoassets {
+                height: 120px;
+                width: 120px;
+
+                video {
+                    height: 120px;
+                    width: 120px;
+                }
+
+                .videoplay {
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    background: white;
+                    opacity: 0.9;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    border-radius: 31px;
+
+                    ion-icon {
+                        font-size: 31px;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .audioassets {
+                ion-icon {
+                    font-size: 28px;
+                    margin-top: 12px;
+                    margin-left: 12px;
+                }
+
+                p {
+                    font-size: 13px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 1.5;
+                }
+            }
+
+            .pdfassets {
+                ion-icon {
+                    font-size: 28px;
+                    margin-top: 12px;
+                    margin-left: 12px;
+                }
+
+                p {
+                    font-size: 13px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+}

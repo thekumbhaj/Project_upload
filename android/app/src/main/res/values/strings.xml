@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ENP</string>
+    <string name="title_activity_main">ENP</string>
+    <string name="package_name">io.enp.com</string>
+    <string name="custom_url_scheme">io.enp.com</string>
+</resources>
